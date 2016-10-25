@@ -5,12 +5,57 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Rammetto+One" rel="stylesheet">
+    <title>Fortune Teller</title>
   </head>
 
   <body>
     <div class="container">
-      
+      <div class="fortuneHeader">
+        <h1>Fortune Teller</h1>
+        <h3>Sometimes you're lucky,</h3> <h3>sometimes you're not.</h3> <h3>Check all that apply,</h3> <h3>to see if your luck is hot.</h3>
+      </div>
+      <form id="fortune-teller">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>Lucky:</p>
+                  <input type="checkbox" name="lucky-events" value="clover">Finding a four leaf clover<br>
+                  <input type="checkbox" name="lucky-events" value="well-wish">Wishing in a well<br>
+                  <input type="checkbox" name="lucky-events" value="horseshoe">Have a lucky horseshoe<br>
+                  <input type="checkbox" name="lucky-events" value="star">Seeing a shooting star<br>
+                  <input type="checkbox" name="lucky-events" value="wish-birthday">Birthday wish<br>
+                  <input type="checkbox" name="lucky-events" value="wish-eyelash">Eyelash wish<br>
+                  <input type="checkbox" name="lucky-events" value="cookie">Good fortune cookie<br>
+                  <input type="checkbox" name="lucky-events" value="rabbitsfoot">Lucky Rabbit's foot<br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <p>Unlucky:</p>
+                  <input type="checkbox" name="unlucky-events" value="cat">Black cat crossing<br>
+                  <input type="checkbox" name="unlucky-events" value="ladder">Walking under a ladder<br>
+                  <input type="checkbox" name="unlucky-events" value="mirror">Breaking a mirror<br>
+                  <input type="checkbox" name="unlucky-events" value="crack">Stepping on a crack<br>
+                  <input type="checkbox" name="unlucky-events" value="13th">Friday the 13th<br>
+                  <input type="checkbox" name="unlucky-events" value="evil-eye">Evil Eye<br>
+                  <input type="checkbox" name="unlucky-events" value="hex">Witch's Hex<br>
+                  <input type="checkbox" name="unlucky-events" value="curse">Voodoo Curse<br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="submitButton">
+          <button type="submit" class="btn btn-lg">Submit Survey</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>

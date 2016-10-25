@@ -1,0 +1,33 @@
+.fortuneHeader {
+  text-align: center;
+  padding: 6%;
+  font-family: 'Bangers', cursive;
+
+}
+
+.submitButton {
+  text-align: center;
+  padding: 3%;
+}
+
+.form-group {
+  margin: 10%;
+}
+
+.form-group input {
+  margin: 3%;
+}
+
+p {
+  font-size: 15pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 80pt;
+}
+
+.panel p {
+  text-decoration: underline;
+}
