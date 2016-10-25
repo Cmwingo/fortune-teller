@@ -1,7 +1,16 @@
+
+#fortune {
+  display: none;
+  margin-left: 40%;
+  margin-right: 40%;
+  position: relative;
+}
+
 .fortuneHeader {
   text-align: center;
   padding: 6%;
   font-family: 'Bangers', cursive;
+  color: #1f3d22;
 
 }
 
@@ -12,6 +21,7 @@
 
 .form-group {
   margin: 10%;
+
 }
 
 .form-group input {
@@ -26,8 +36,30 @@ p {
 
 h1 {
   font-size: 80pt;
+  color:
+}
+
+.panel {
+  background-color: transparent;
+
+  border: 6px solid gray;
+  border-style: groove;
+  margin: 10%;
+  padding: 10%;
 }
 
 .panel p {
   text-decoration: underline;
+}
+
+body {
+  background-image: url(../img/fortune-teller.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+img {
+  width: 80%;
+  opacity: 0.6;
+  position: absolute;;;
 }

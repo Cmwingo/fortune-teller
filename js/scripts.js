@@ -5,8 +5,10 @@ $(document).ready(function() {
     var checkboxName = "";
     var luckyEvents = getCheckboxInput("lucky-events");
     var unluckyEvents = getCheckboxInput("unlucky-events");
-    
+
+    $("form").fadeOut();
     tellFortune(luckyEvents.length, unluckyEvents.length);
+    $("#fortune").delay(400).fadeIn(200);
   });
 });
 
