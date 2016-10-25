@@ -3,18 +3,8 @@ $(document).ready(function() {
     event.preventDefault();
 
     var checkboxName = "";
-
     var luckyEvents = getCheckboxInput("lucky-events");
     var unluckyEvents = getCheckboxInput("unlucky-events");
-    console.log(luckyEvents);
-    // $("input:checkbox[name=lucky-events]:checked").each(function(){
-    //   var luckyEvent = $(this).val();
-    //   luckyEvents.push(luckyEvent);
-    // });
-    // $("input:checkbox[name=unlucky-events]:checked").each(function(){
-    //   var unluckyEvent = $(this).val();
-    //   unluckyEvents.push(unluckyEvent);
-    // });
 
     if(luckyEvents.length > 4 && unluckyEvents.length < 3){
       $("#fortune p").text("You are an extremely lucky person. I see nothing but good things in your future. Go play the lottery today!");
@@ -25,17 +15,18 @@ $(document).ready(function() {
     } else {
       $("#fortune p").text("Chaos swirls around you. My crystal ball can't get any good reading for your future. Please try again later.");
     }
-    console.log(unluckyEvents);
   });
 });
 
 function getCheckboxInput(checkboxName){
+
   var inputs = [];
+
   $("input:checkbox[name=" + checkboxName + "]:checked").each(function(){
     var selection = $(this).val();
-    console.log(selection);
     inputs.push(selection);
   });
+
   return inputs;
-  console.log(inputs);
+
 };
